@@ -16,6 +16,6 @@ let p = json;
 console.log(p);
 
 path.forEach(key => {
-    // 这里的操作其实就等于json[a], json[b]...
+    // 这里的操作其实就等于json[a], json[b]... 
     p = p[key]
 })
