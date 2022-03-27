@@ -1,11 +1,14 @@
 /**
- * 这里也对应leetcode的349题: 两个数组的交集
+ * 集合的简单练习
  */
+let arr = [1, 1, 2, 2, 4, 3];
+let set = new Set([...arr]);
 
-let arr = [1, 2, 2, 3, 1];
-let arr2 = [2, 7];
+// 集合是否存在此元素用has方法
+console.log(set.has(3)); // true
+console.log(set.has(5)); // false
 
-let set1 = new Set(arr);
-let set2 = new Set(arr2);
-
-let set3 = [...set1].filter(item => set2.has(item));
+// 求交集
+let set2 = new Set([2, 3]);
+let set3 = [...set].filter(item => set2.has(item));
+console.log(set3);
